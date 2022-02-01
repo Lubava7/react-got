@@ -1,12 +1,14 @@
 import logo from './logo.svg';
 import './App.css';
 // import StudentComp from './compoent/Student/Student';
+// import ReactTryTime from './compoent/ReactTryTime/ReactTryTime';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
       {/* <StudentComp/> */}
+      {/* <ReactTryTime/> */}
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.

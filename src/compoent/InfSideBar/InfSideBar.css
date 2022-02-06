@@ -1,0 +1,26 @@
+.InfoLine {
+  border: 2px solid peru;
+  height: 100%;
+  width: 150px;
+  position: fixed;
+  display: flex;
+  background-color: aliceblue;
+}
+li {
+  list-style-type: none;
+  /* padding-top: 80%; */
+}
+.button {
+  border: none;
+  background-color: brown;
+  height: 50px;
+  width: 50px;
+  border-radius: 30px 30px 30px 30px;
+}
+ul {
+  height: 100%;
+}
+.Persons {
+  background-image: url(https://www.digger.ru/storage/app/media/%D0%A1%D1%82%D0%B5%D0%BF%D0%B0%20%D0%9E%D0%B1%D0%BE%D0%B8/got3.jpg);
+  background-size: 100%;
+}

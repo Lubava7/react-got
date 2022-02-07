@@ -6,27 +6,28 @@ export default class SiteDescription extends React.Component {
     super(props);
 
     this.state = {
-      facts: [],
+      items: [],
       isLoading: true,
     };
   }
   componentDidMount() {
-    fetch("https://cat-fact.herokuapp.com/facts")
+    fetch("https://anapioficeandfire.com/api/characters?pageSize=20")
       .then((res) => res.json())
       .then((value) => {
-        this.setState({ facts: value, isLoading: false });
+        this.setState({ items: value, isLoading: false });
+        // console.log(val);
       });
   }
 
   render() {
     if (this.state.isLoading) {
-      return <p>Loading cat facts...</p>;
+      return <p>Loading GOT ...</p>;
     }
     return (
       <div className="body">
         <div className="desc">
-          {this.state.facts.map((fact) => {
-            return <p>{fact.text} </p>;
+          {this.state.items.map((item) => {
+            return <p>{item.aliases} </p>;
           })}
         </div>
       </div>

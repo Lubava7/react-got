@@ -1,0 +1,22 @@
+.all {
+  border: 3px solid black;
+  width: 50%;
+  height: 100%;
+  margin: 5% 5% 10% 170px;
+  display: flex;
+  flex-direction: row-reverse;
+}
+.body {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.description {
+  border: 3px solid black;
+  width: 25%;
+  height: 100%;
+}
+.links {
+  border: 3px solid black;
+  width: 25%;
+  height: 100%;
+}

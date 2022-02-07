@@ -1,0 +1,11 @@
+.desc {
+  border: 3px solid white;
+  background-color: white;
+  width: 70%;
+  height: 100%;
+  margin: 10% 5% 10% 170px;
+}
+.body {
+  display: flex;
+  flex-direction: row;
+}

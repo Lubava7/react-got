@@ -1,13 +1,13 @@
-// import logo from "./logo.svg";
 import "./App.css";
-// import StudentComp from './compoent/Student/Student';
-// import ReactTryTime from "./compoent/ReactTryTime/ReactTryTime";
 import InfSideBar from "./compoent/InfSideBar/InfSideBar";
+// import CharacterApi from "./compoent/CharacterApi/CharacterApi";
+import SiteDescription from "./compoent/SiteDescription/SiteDescription";
 
 function App() {
   return (
     <body>
       <InfSideBar />
+      <SiteDescription />
     </body>
   );
 }

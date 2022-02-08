@@ -1,22 +1,25 @@
 .all {
   border: 3px solid black;
-  width: 50%;
+  width: 70%;
   height: 100%;
-  margin: 5% 5% 10% 170px;
-  display: flex;
-  flex-direction: row-reverse;
+  margin: 0% 5% 0% 170px;
+  background-color: aliceblue;
 }
 .body {
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: column;
 }
 .description {
   border: 3px solid black;
-  width: 25%;
-  height: 100%;
+  width: 70%;
+  height: 50px;
+  margin: 0% 5% 0% 170px;
+  background-color: aliceblue;
 }
 .links {
   border: 3px solid black;
-  width: 25%;
-  height: 100%;
+  width: 70%;
+  height: 50px;
+  margin: 0% 5% 0% 170px;
+  background-color: aliceblue;
 }

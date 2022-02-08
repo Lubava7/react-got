@@ -35,10 +35,6 @@ class InfSideBar extends React.Component {
             <button className="Img Inf Link  button"></button>
             <p>music</p>
           </li>
-          <li>
-            <button className="Img Inf Link  button"></button>
-            <p>music</p>
-          </li>
         </ul>
       </div>
     );

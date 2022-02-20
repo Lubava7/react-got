@@ -10,6 +10,13 @@ export default class Main extends React.Component {
   }
 
   render() {
-    return <CharacterApi />;
+    return (
+      <body>
+        <div>
+          <p>Description of the site and characters</p>
+        </div>
+        <CharacterApi />
+      </body>
+    );
   }
 }

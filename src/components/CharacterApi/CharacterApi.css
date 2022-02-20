@@ -1,0 +1,31 @@
+.ulli {
+  background-color: aliceblue;
+  width: 70%;
+  height: 100%;
+  margin: 10% 5% 10% 170px;
+  font-size: 25px;
+  border: 2px solid black;
+}
+.body {
+  /* border: 2px solid black; */
+  display: flex;
+}
+.ul {
+  list-style-type: none;
+  /* float: left; */
+}
+li {
+  list-style-type: none;
+  width: 410px;
+  /* float: right; */
+}
+.photo-name {
+  border: 0;
+}
+.image {
+  height: 400px;
+  width: 400px;
+}
+a {
+  text-decoration: none;
+}

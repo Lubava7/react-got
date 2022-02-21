@@ -1,9 +1,32 @@
 import React from "react";
 import { useParams } from "react-router-dom";
+import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const PersSlip = () => {
-  console.log(useParams());
-  return <div className="div1">1</div>;
+  // console.log(useParams());
+  const { index } = useParams();
+  const [item, setItem] = useState(null);
+
+  useEffect(() => {
+    fetch(
+      "https://anapioficeandfire.com/api/characters/${item.index}?pageSize=10"
+    )
+      .then((res) => res.json())
+      .then((value) => setItem(value));
+  }, [index]);
+
+  return (
+    <div className="div1">
+      {item && (
+        <>
+          <h1>{item.name}</h1>
+          <p>{item.aliases}</p>
+          <Link to={"/characters/${item.index}"}></Link>
+        </>
+      )}
+    </div>
+  );
 };
 
 export default PersSlip;

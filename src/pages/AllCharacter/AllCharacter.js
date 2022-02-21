@@ -1,18 +1,25 @@
 import React from "react";
-import { useParams } from "react-router-dom";
-import { useState, useEffect } from "react";
-import Main from "../../components/Main/Main";
+import { Link } from "react-router-dom";
 
-export default function AllCharacter() {
-  const { index } = useParams();
-  const { value } = useState(null);
+import { useState, useEffect } from "react";
+
+const AllCharacter = () => {
+  const [items, setItems] = useState([]);
 
   useEffect(() => {
     fetch("https://anapioficeandfire.com/api/characters?pageSize=10")
       .then((res) => res.json())
-      .then((value) => {
-        this.setState({ value });
-      });
-  }, [index]);
-  return <div>{value.index}</div>;
-}
+      .then((value) => setItems(value));
+  }, []);
+  return (
+    <div>
+      <p>All characetr</p>
+      {items.map((item) => (
+        <Link key={item.name} to={`/characters/${item.index}`}>
+          <li>{item.aliases}</li>
+        </Link>
+      ))}
+    </div>
+  );
+};
+export default AllCharacter;

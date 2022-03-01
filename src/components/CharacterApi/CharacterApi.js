@@ -16,7 +16,7 @@ function CharacterApi() {
     <div className="body">
       <div className="ulli">
         {items.map((item) => (
-          <Link className="photo-name" to={`./persSlip/${item.aliases}`}>
+          <Link className="photo-name" to={`./items/${item.aliases}`}>
             <li className="aliases">{item.aliases}</li>
           </Link>
         ))}

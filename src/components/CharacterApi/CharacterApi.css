@@ -5,15 +5,18 @@
   margin: 10% 5% 10% 170px;
   font-size: 25px;
   border: 2px solid black;
+
+  /* display: flex; */
+  list-style-type: none;
 }
 .body {
   /* border: 2px solid black; */
   display: flex;
 }
-.ul {
+/* .ul {
   list-style-type: none;
-  /* float: left; */
-}
+  float: left;
+} */
 li {
   list-style-type: none;
   width: 410px;

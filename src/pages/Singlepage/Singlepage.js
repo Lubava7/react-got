@@ -3,23 +3,24 @@ import { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
 
 function Singlepage() {
-  const { aliases } = useParams();
+  const { index } = useParams();
   const [item, setItem] = useState(null);
 
   useEffect(() => {
-    fetch(`https://anapioficeandfire.com/api/characters/${aliases}`)
+    fetch(`https://anapioficeandfire.com/api/character/${index}`)
       .then((res) => res.json())
       .then((value) => setItem(value));
-  }, [aliases]);
+  }, [index]);
 
   return (
     <div>
+      hhfhfhfhfh
       {item && (
-        <>
+        <div>
           <h1>{item.aliases}</h1>
-          <p>{item.url}</p>
-          <Link to={`/`}>back link</Link>
-        </>
+          <p>{item.gender}</p>
+          <Link to={`/items`}>back link</Link>
+        </div>
       )}
     </div>
   );

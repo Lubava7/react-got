@@ -1,14 +1,20 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import Randomimg from "../Randomimg/Randomimg";
 import "./Main.css";
-import CharacterApi from "../CharacterApi/CharacterApi";
 
 function Main() {
   return (
     <body>
-      <div>
-        <p>Description of the site and characters</p>
-      </div>
-      <CharacterApi />
+      <nav className="navigates">
+        <Link className="link" to="/">
+          Main
+        </Link>
+        <Link className="link" to="items">
+          Characters
+        </Link>
+      </nav>
+      <Randomimg />
     </body>
   );
 }

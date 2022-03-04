@@ -7,7 +7,7 @@ function Singlepage() {
   const [item, setItem] = useState(null);
 
   useEffect(() => {
-    fetch(`https://anapioficeandfire.com/api/character/${index}`)
+    fetch(`https://anapioficeandfire.com/api/characters/${index}`)
       .then((res) => res.json())
       .then((value) => setItem(value));
   }, [index]);
@@ -15,13 +15,16 @@ function Singlepage() {
   return (
     <div>
       hhfhfhfhfh
-      {item && (
-        <div>
-          <h1>{item.aliases}</h1>
-          <p>{item.gender}</p>
-          <Link to={`/items`}>back link</Link>
-        </div>
-      )}
+      {
+        (item,
+        index && (
+          <div>
+            <h1>{item.aliases}</h1>
+            <p>{item.gender}</p>
+            <Link to={`/items`}>back link</Link>
+          </div>
+        ))
+      }
     </div>
   );
 }

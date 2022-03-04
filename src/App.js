@@ -9,7 +9,7 @@ function App() {
     <Routes>
       <Route path="/" element={<Main />} />
       <Route path="items" element={<Itemspage />} />
-      <Route path="/items/:id" element={<Singlepage />} />
+      <Route path="/items/:aliases" element={<Singlepage />} />
     </Routes>
   );
 }

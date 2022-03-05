@@ -16,7 +16,7 @@ function CharacterApi() {
     <div className="body">
       <div className="ulli">
         {items.map((item, index) => (
-          <Link className="photo-name" to={`/items/${index}`}>
+          <Link className="photo-name" to={`/items/${index + 1}`}>
             <li className="aliases">{item.aliases}</li>
           </Link>
         ))}

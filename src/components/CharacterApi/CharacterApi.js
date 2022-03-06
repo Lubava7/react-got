@@ -2,15 +2,24 @@ import React from "react";
 import "./CharacterApi.css";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import CircularProgress from "@mui/material/CircularProgress";
 
 function CharacterApi() {
   const [items, setItems] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    fetch("https://anapioficeandfire.com/api/characters?pageSize=10")
+    fetch("https://anapioficeandfire.com/api/characters?pageSize=100")
       .then((res) => res.json())
-      .then((value) => setItems(value));
+      .then((value) => {
+        setItems(value);
+        setIsLoading(false);
+      });
   }, []);
+
+  if (isLoading) {
+    return <CircularProgress />;
+  }
 
   return (
     <div className="body">

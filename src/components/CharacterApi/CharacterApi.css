@@ -1,34 +1,47 @@
 .ulli {
   background-color: aliceblue;
-  width: 70%;
+  width: 700px;
   height: 100%;
-  margin: 10% 5% 10% 170px;
-  font-size: 25px;
+  margin-left: 5%;
+  font-size: 18px;
   border: 2px solid black;
-
-  /* display: flex; */
+  flex-wrap: wrap;
+  display: flex;
   list-style-type: none;
 }
 .body {
   /* border: 2px solid black; */
   display: flex;
 }
-/* .ul {
-  list-style-type: none;
-  float: left;
-} */
+
 li {
   list-style-type: none;
-  width: 410px;
-  /* float: right; */
+  width: 110px;
 }
 .photo-name {
   border: 0;
 }
-.image {
-  height: 400px;
-  width: 400px;
-}
+
 a {
   text-decoration: none;
+}
+.png-items-page {
+  height: 100px;
+  width: 130px;
+  vertical-align: middle;
+  opacity: 1;
+}
+.aliases {
+  background: #000;
+  width: 130px;
+  text-align: center;
+  opacity: 0.6;
+  /* position: absolute; */
+  bottom: 10px;
+  font-family: generis;
+  color: #fff;
+  font-variant: small-caps;
+  text-shadow: 0 0 1px #000;
+  padding: 0 10px;
+  border-radius: 0 0 5px 5px;
 }

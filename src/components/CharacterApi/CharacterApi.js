@@ -3,6 +3,7 @@ import "./CharacterApi.css";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import CircularProgress from "@mui/material/CircularProgress";
+import questionmark from "../../images/questionmark.png";
 
 function CharacterApi() {
   const [items, setItems] = useState([]);
@@ -26,7 +27,11 @@ function CharacterApi() {
       <div className="ulli">
         {items.map((item, index) => (
           <Link className="photo-name" to={`/items/${index + 1}`}>
-            <li className="aliases">{item.aliases}</li>
+            <img className="png-items-page" src={questionmark} alt="?" />
+            <li className="aliases">
+              {item.aliases}
+              {item.name}
+            </li>
           </Link>
         ))}
       </div>

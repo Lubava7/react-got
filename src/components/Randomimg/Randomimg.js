@@ -1,14 +1,28 @@
-// import React, { useState } from "react";
+import React from "react";
 import "./Randomimg.css";
-// import { images } from "../../Helpers/RandImgData";
+import questionmark from "../../images/questionmark.png";
 
 function Randomimg({ mainCharacter }) {
   return (
     <div className="carousel">
-      <div>
-        {mainCharacter.img ? <img src={mainCharacter.img} /> : <p>?</p>}
+      <div className="rand-photo">
+        {mainCharacter.img ? (
+          <img src={mainCharacter.img} alt="name" />
+        ) : (
+          <img className="png" src={questionmark} alt="?" />
+        )}
       </div>
-      <span>{mainCharacter.name || mainCharacter.aliases}</span>
+
+      <span className="span">
+        {mainCharacter.name || mainCharacter.aliases}
+      </span>
+
+      <div className="description-random-char">
+        <h1>{mainCharacter.name || mainCharacter.aliases}</h1>
+        <p>gender:{mainCharacter.gender}</p>
+        <p className="playedBy">playedBy:{mainCharacter.playedBy}</p>
+        <p className="povBooks">povBooks:{mainCharacter.povBooks}</p>
+      </div>
     </div>
   );
 }

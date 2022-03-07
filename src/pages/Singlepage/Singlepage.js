@@ -1,7 +1,10 @@
 import React from "react";
+import "./Singlepage.css";
 import { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
 import CircularProgress from "@mui/material/CircularProgress";
+import questionmark from "../../images/questionmark.png";
+
 function Singlepage() {
   const { aliases } = useParams();
   const [item, setItem] = useState(null);
@@ -20,14 +23,37 @@ function Singlepage() {
   }
 
   return (
-    <div>
-      {item && (
-        <div>
-          <h1>{item.aliases}</h1>
-          <p>{item.gender}</p>
-          <Link to={`/items`}>back link</Link>
+    <div className="singlepage-main-div">
+      <nav className="navigates">
+        <Link className="link" to={`/items`}>
+          Characters
+        </Link>
+      </nav>
+      <div className="img-n-h1">
+        <div className="item-img">
+          {item.img ? (
+            <img src={item.img} alt="name" />
+          ) : (
+            <img className="png" src={questionmark} alt="?" />
+          )}
         </div>
-      )}
+        {item && (
+          <div className="h1">
+            <h1>{item.aliases}</h1>
+            <p>gender:{item.gender}</p>
+            <p className="born">born:{item.born}</p>
+            <p className="culture">culture:{item.culture}</p>
+            <p className="died">died:{item.died}</p>
+            <p className="father">father:{item.father}</p>
+            <p className="mother">mother:{item.mother}</p>
+            <p className="playedBy">playedBy:{item.playedBy}</p>
+            <p className="povBooks">povBooks:{item.povBooks}</p>
+            <p className="spouse">spouse:{item.spouse}</p>
+            <p className="titles">titles:{item.titles}</p>
+            <p className="url">url:{item.url}</p>
+          </div>
+        )}
+      </div>
     </div>
   );
 }

@@ -13,6 +13,9 @@ function Itemspage() {
         <Link className="link" to={`/`}>
           Main
         </Link>
+        <Link className="link" to={`/`}>
+          <button className="popup">pop up</button>
+        </Link>
       </nav>
       <div className="title">
         <p className="title-of-char">Description of the site and characters</p>

@@ -64,3 +64,11 @@
   text-align: center;
   margin-top: 10px;
 }
+.popup-open-button {
+  /* border: none; */
+  background-color: rgb(63, 63, 63);
+  border-radius: 15px 15px 15px 15px;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}

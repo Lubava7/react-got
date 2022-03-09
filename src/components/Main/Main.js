@@ -5,6 +5,8 @@ import "./Main.css";
 import CircularProgress from "@mui/material/CircularProgress";
 import questionmark from "../../images/questionmark.png";
 
+import PopupOpenButton from "../../components/PopupOpenButton/PopupOpenButton";
+
 function Main() {
   const [mainCharacter, setMainCharacter] = useState({});
   const [isLoading, setIsLoading] = useState(true);
@@ -44,7 +46,11 @@ function Main() {
         <Link className="link" to={`/`}>
           Main
         </Link>
+        <Link className="link" to={`/`}>
+          <PopupOpenButton />
+        </Link>
       </nav>
+
       <div className="randomimg">
         <Randomimg mainCharacter={mainCharacter} />
       </div>

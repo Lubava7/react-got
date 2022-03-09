@@ -19,7 +19,14 @@ function CharacterApi() {
   }, []);
 
   if (isLoading) {
-    return <CircularProgress />;
+    return (
+      <CircularProgress
+        className="CircularProgress"
+        sx={{
+          color: "green",
+        }}
+      />
+    );
   }
 
   return (

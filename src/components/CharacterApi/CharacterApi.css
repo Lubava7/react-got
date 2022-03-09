@@ -1,6 +1,6 @@
 .ulli {
   background-color: aliceblue;
-  width: 700px;
+  width: 90%;
   height: 100%;
   margin-left: 5%;
   font-size: 18px;
@@ -44,4 +44,10 @@ a {
   text-shadow: 0 0 1px #000;
   padding: 0 10px;
   border-radius: 0 0 5px 5px;
+}
+.CircularProgress {
+  /* background-color: rgb(1, 18, 34); */
+  margin: 50%;
+  z-index: 100;
+  border-radius: 20px;
 }

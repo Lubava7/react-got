@@ -19,7 +19,14 @@ function Singlepage() {
   }, [aliases]);
 
   if (isLoading) {
-    return <CircularProgress />;
+    return (
+      <CircularProgress
+        className="CircularProgress"
+        sx={{
+          color: "green",
+        }}
+      />
+    );
   }
 
   return (
@@ -28,7 +35,16 @@ function Singlepage() {
         <Link className="link" to={`/items`}>
           Characters
         </Link>
+        <Link className="link" to={`/`}>
+          Main
+        </Link>
       </nav>
+      <CircularProgress
+        className="CircularProgress"
+        sx={{
+          color: "green",
+        }}
+      />
       <div className="img-n-h1">
         <div className="item-img">
           {item.img ? (

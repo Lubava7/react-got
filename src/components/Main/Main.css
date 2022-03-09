@@ -72,3 +72,9 @@
   font-size: 20px;
   font-weight: bold;
 }
+.CircularProgress {
+  /* background-color: rgb(1, 18, 34); */
+  margin: 50%;
+  z-index: 100;
+  border-radius: 20px;
+}

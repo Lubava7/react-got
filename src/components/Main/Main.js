@@ -58,9 +58,9 @@ function Main() {
         </Link>
       </nav>
 
-      <div className="randomimg">
-        <Randomimg mainCharacter={mainCharacter} />
-      </div>
+      {/* <div className="randomimg"> */}
+      <Randomimg mainCharacter={mainCharacter} />
+      {/* </div> */}
 
       <div className="title">
         <Link className="title-of-char" to="items">

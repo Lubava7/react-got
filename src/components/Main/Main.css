@@ -43,9 +43,9 @@
   background-color: rgb(184, 184, 184);
 }
 .main-page-10 {
-  width: 100%;
+  width: 60%;
   height: 100%;
-  margin: 0 0 0 5%;
+  margin: 2% 0 0 5%;
   font-size: 18px;
   border: 2px solid black;
   flex-wrap: wrap;

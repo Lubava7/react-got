@@ -1,7 +1,7 @@
 import React from "react";
 import "./Popup.css";
 
-function Popup({ open, children, onClose }) {
+function Popup({ open, onClose }) {
   if (!open) return null;
   return (
     <body>

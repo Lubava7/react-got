@@ -39,12 +39,12 @@ function Singlepage() {
           Main
         </Link>
       </nav>
-      <CircularProgress
+      {/* <CircularProgress
         className="CircularProgress"
         sx={{
           color: "green",
         }}
-      />
+      /> */}
       <div className="img-n-h1">
         <div className="item-img">
           {item.img ? (

@@ -9,13 +9,13 @@ function Randomimg({ mainCharacter }) {
         {mainCharacter.img ? (
           <img src={mainCharacter.img} alt="name" />
         ) : (
-          <img className="png" src={questionmark} alt="?" />
+          <img className="png-random-img" src={questionmark} alt="?" />
         )}
-      </div>
 
-      <span className="span">
-        {mainCharacter.name || mainCharacter.aliases}
-      </span>
+        <span className="span">
+          {mainCharacter.name || mainCharacter.aliases}
+        </span>
+      </div>
 
       <div className="description-random-char">
         <h1>{mainCharacter.name || mainCharacter.aliases}</h1>

@@ -1,15 +1,23 @@
 .h1 {
   border: 2px solid red;
-  width: 40%;
+  width: 50%;
   margin-left: 5%;
   word-wrap: break-word;
+  height: 500px;
+  padding-left: 2%;
+  padding-right: 2%;
 }
 .item-img {
-  border: 2px solid red;
-  width: 250px;
   margin-left: 5%;
-  height: 250px;
   cursor: pointer;
+  /* border: 2px solid red; */
+  height: 500px;
+  width: 400px;
+}
+.png {
+  border: 2px solid rgb(0, 0, 0);
+  height: 500px;
+  width: 400px;
 }
 .img-n-h1 {
   display: flex;

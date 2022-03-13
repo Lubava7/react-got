@@ -9,22 +9,30 @@
   padding: 5% 5% 5% 5%;
   background-color: rgb(184, 184, 184);
 }
-.png {
+.png-random-img {
   border: 2px solid rgb(0, 0, 0);
-  height: 500px;
-  width: 400px;
+  height: 100%;
+  width: 100%;
 }
 .span {
-  margin-left: -240px;
-  margin-top: 470px;
-  color: black;
+  margin-left: 25%;
+  margin-top: 0px;
+  color: rgb(255, 4, 4);
+  position: absolute;
+  bottom: 0;
   /* border: 2px solid red; */
 }
 .description-random-char {
   border: 2px solid rgb(0, 0, 0);
-  margin-left: 250px;
+  margin-left: 50px;
   height: 500px;
   width: 400px;
   word-wrap: break-word;
   background-color: white;
+}
+.rand-photo {
+  /* border: 2px solid red; */
+  height: 500px;
+  width: 400px;
+  position: relative;
 }

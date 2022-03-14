@@ -50,7 +50,7 @@ function Singlepage() {
         </div>
         {item && (
           <div className="h1">
-            <h1>{item.aliases}</h1>
+            <h1>{item.name || item.aliases}</h1>
             <p>gender:{item.gender}</p>
             <p className="born">born:{item.born}</p>
             <p className="culture">culture:{item.culture}</p>

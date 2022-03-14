@@ -1,38 +1,49 @@
 .carousel {
-  border: 2px solid rgb(0, 0, 0);
+  border: 2px solid rgb(48, 104, 1);
   width: 100%;
-  height: 500px;
+  height: 350px;
   display: flex;
   color: black;
   font-weight: bold;
-  margin-top: 5%;
-  padding: 5% 5% 5% 5%;
-  background-color: rgb(184, 184, 184);
+  margin-top: 1%;
+  padding: 3%;
+  background-color: rgb(37, 163, 5);
 }
-.png-random-img {
+/* .png-random-img {
   border: 2px solid rgb(0, 0, 0);
   height: 100%;
   width: 100%;
+} */
+.p-descript {
+  border: 2px solid rgb(51, 255, 0);
+  margin-top: 5%;
+  border-radius: 20px;
 }
+
 .span {
-  margin-left: 25%;
-  margin-top: 0px;
-  color: rgb(255, 4, 4);
-  position: absolute;
-  bottom: 0;
-  /* border: 2px solid red; */
+  margin-left: 0%;
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+  border-radius: 20px;
+  border: 2px solid rgb(51, 255, 0);
 }
 .description-random-char {
-  border: 2px solid rgb(0, 0, 0);
+  border: 2px solid rgb(51, 255, 0);
+  /* font-size: 20px; */
+  border-radius: 20px;
+  padding-left: 20px;
   margin-left: 50px;
-  height: 500px;
-  width: 400px;
+  height: 300px;
+  width: 200px;
+  position: relative;
   word-wrap: break-word;
-  background-color: white;
+  /* background-color: rgb(109, 128, 25); */
 }
 .rand-photo {
-  /* border: 2px solid red; */
-  height: 500px;
-  width: 400px;
+  border: 2px solid rgb(51, 255, 0);
+  border-radius: 20px;
+  height: 300px;
+  width: 200px;
   position: relative;
+  padding-top: 5%;
 }

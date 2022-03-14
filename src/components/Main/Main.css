@@ -4,38 +4,9 @@
   background-color: #e6e6e6;
   width: 100%;
 }
-.navigates {
-  border: 2px solid white;
-  background-color: grey;
-  width: 100%;
-  grid-column-gap: 24px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(2ch, max-content));
-  width: 100%;
-  -webkit-box-align: end;
-  align-items: flex-end;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  position: relative;
-  vertical-align: baseline;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  padding-inline-start: 40px;
-  -webkit-box-direction: normal;
-}
 
-.link {
-  padding-left: 10%;
-  color: white;
-  font-size: 20px;
-  font-weight: bold;
-  width: 100%;
-}
 .randomimg {
-  border: 2px solid rgb(0, 0, 0);
+  border: 2px solid rgb(51, 255, 0);
   width: 100%;
   height: 255px;
   margin-top: 10%;
@@ -43,11 +14,12 @@
   background-color: rgb(184, 184, 184);
 }
 .main-page-10 {
-  width: 60%;
+  width: 90%;
+  border-radius: 20px;
   height: 100%;
   margin: 2% 0 0 5%;
   font-size: 18px;
-  border: 2px solid black;
+  border: 2px solid rgb(51, 255, 0);
   flex-wrap: wrap;
   display: flex;
   list-style-type: none;
@@ -56,25 +28,37 @@
 .title-of-char {
   color: #b58f0f;
   text-decoration: none;
+  font-size: 30px;
 }
 .title {
-  border: 2px solid black;
+  border: 2px solid rgb(51, 255, 0);
   font-family: "Trajan";
   font-size: 25px;
   text-align: center;
   margin-top: 10px;
 }
-.popup-open-button {
-  /* border: none; */
-  background-color: rgb(63, 63, 63);
-  border-radius: 15px 15px 15px 15px;
-  color: white;
-  font-size: 20px;
-  font-weight: bold;
-}
+
 .CircularProgress {
   /* background-color: rgb(1, 18, 34); */
   margin: 50%;
   z-index: 100;
   border-radius: 20px;
+}
+.p-10 {
+  padding: 3px;
+  font-size: 12px;
+  border: 2px solid rgb(51, 255, 0);
+  width: 160px;
+  height: 160px;
+  border-radius: 20px;
+  word-wrap: break-word;
+}
+.link-popup-button-main {
+  padding-left: 10%;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  width: 100%;
+  cursor: pointer;
+  position: fixed;
 }

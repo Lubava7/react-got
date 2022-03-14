@@ -1,0 +1,23 @@
+/* .navigates {
+  cursor: pointer;
+  border: 2px solid black;
+  width: 100%;
+} */
+.link {
+  padding-left: 10%;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  /* width: 100%; */
+  cursor: pointer;
+  border: 2px solid black;
+}
+.popup-open-button {
+  background-color: rgb(63, 63, 63);
+  border-radius: 15px 15px 15px 15px;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  border: 2px solid black;
+  width: 100%;
+}

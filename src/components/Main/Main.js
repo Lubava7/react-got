@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 import Randomimg from "../Randomimg/Randomimg";
 import "./Main.css";
 import CircularProgress from "@mui/material/CircularProgress";
-import questionmark from "../../images/questionmark.png";
-
-import PopupOpenButton from "../../components/PopupOpenButton/PopupOpenButton";
+// import questionmark from "../../images/questionmark.png";
+import Header from "../../components/Header/Header";
+import PopupOpenButton from "../PopupOpenButton/PopupOpenButton";
 
 function Main() {
   const [mainCharacter, setMainCharacter] = useState({});
@@ -14,7 +14,7 @@ function Main() {
   const [items, setItems] = useState([]);
 
   useEffect(() => {
-    fetch("https://anapioficeandfire.com/api/characters?pageSize=12")
+    fetch("https://anapioficeandfire.com/api/characters?pageSize=10")
       .then((res) => res.json())
       .then((value) => {
         setItems(value);
@@ -46,21 +46,11 @@ function Main() {
   }
   return (
     <body className="main-body">
-      <nav className="navigates">
-        <Link className="link" to="items">
-          Characters
-        </Link>
-        <Link className="link" to={`/`}>
-          Main
-        </Link>
-        <Link className="link" to={`/`}>
-          <PopupOpenButton />
-        </Link>
-      </nav>
-
-      {/* <div className="randomimg"> */}
+      <Link className="link-popup-button-main" to={`/`}>
+        <PopupOpenButton />
+      </Link>
+      <Header />
       <Randomimg mainCharacter={mainCharacter} />
-      {/* </div> */}
 
       <div className="title">
         <Link className="title-of-char" to="items">
@@ -71,10 +61,16 @@ function Main() {
       <div className="main-page-10">
         {items.map((item, index) => (
           <Link className="photo-name" to={`/items/${index + 1}`}>
-            <img className="png-items-page" src={questionmark} alt="?" />
+            <div className="p-10">
+              {/* <img className="png-items-page" src={questionmark} alt="?" /> */}
+              <p>
+                This div contains photo of the current character which matches
+                his name. I dont have a photo yet but this doesnt change
+                anything for us here.
+              </p>
+            </div>
             <li className="aliases">
-              {item.aliases}
-              {item.name}
+              {item.aliases ? <p>{item.aliases}</p> : <p>{item.name}</p>}
             </li>
           </Link>
         ))}

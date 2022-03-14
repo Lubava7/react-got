@@ -1,9 +1,11 @@
 import React from "react";
 import "./Singlepage.css";
 import { useEffect, useState } from "react";
-import { useParams, Link } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import CircularProgress from "@mui/material/CircularProgress";
 import questionmark from "../../images/questionmark.png";
+
+import Header from "../../components/Header/Header";
 
 function Singlepage() {
   const { aliases } = useParams();
@@ -31,20 +33,8 @@ function Singlepage() {
 
   return (
     <div className="singlepage-main-div">
-      <nav className="navigates">
-        <Link className="link" to={`/items`}>
-          Characters
-        </Link>
-        <Link className="link" to={`/`}>
-          Main
-        </Link>
-      </nav>
-      {/* <CircularProgress
-        className="CircularProgress"
-        sx={{
-          color: "green",
-        }}
-      /> */}
+      <Header />
+
       <div className="img-n-h1">
         <div className="item-img">
           {item.img ? (
@@ -66,7 +56,7 @@ function Singlepage() {
             <p className="povBooks">povBooks:{item.povBooks}</p>
             <p className="spouse">spouse:{item.spouse}</p>
             <p className="titles">titles:{item.titles}</p>
-            <p className="url">url:{item.url}</p>
+            {/* <p className="url">url:{item.url}</p> */}
           </div>
         )}
       </div>

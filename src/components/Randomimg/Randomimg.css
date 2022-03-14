@@ -16,12 +16,14 @@
 } */
 .p-descript {
   /* border: 2px solid rgb(51, 255, 0); */
-  margin-top: 10px;
+
   border-radius: 20px;
+  padding: 10px;
+  word-wrap: break-word;
+  font-size: 15px;
 }
 
 .span {
-  margin-left: 0%;
   font-size: 20px;
   color: rgb(0, 0, 0);
   border-radius: 20px;
@@ -34,8 +36,8 @@
   border-radius: 20px;
   padding-left: 20px;
   margin-left: 50px;
-  height: 300px;
-  width: 350px;
+  /* height: 300px; */
+  width: 800px;
   position: relative;
   word-wrap: break-word;
 }
@@ -43,8 +45,8 @@
   border: 2px solid rgb(51, 255, 0);
   background-color: rgb(37, 163, 5);
   border-radius: 20px;
-  height: 300px;
-  width: 350px;
+  /* height: 300px; */
+  width: 800px;
   /* position: relative; */
-  padding-top: 20px;
+  padding-top: 2px;
 }

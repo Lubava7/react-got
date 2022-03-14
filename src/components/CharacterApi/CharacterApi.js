@@ -34,11 +34,15 @@ function CharacterApi() {
       <div className="ulli">
         {items.map((item, index) => (
           <Link className="photo-name" to={`/items/${index + 1}`}>
-            <img className="png-items-page" src={questionmark} alt="?" />
-            <li className="aliases">
-              {item.aliases}
-              {item.name}
-            </li>
+            {/* <img className="png-items-page" src={questionmark} alt="?" /> */}
+            <div className="p-10">
+              <p>
+                This div contains photo of the current character which matches
+                his name. I dont have a photo yet but this doesnt change
+                anything for us here.
+              </p>
+            </div>
+            <li className="aliases">{item.name || item.aliases}</li>
           </Link>
         ))}
       </div>

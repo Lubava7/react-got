@@ -13,15 +13,38 @@ function Popup({ open, onClose }) {
           </button>
         </div>
         <div className="popup-body">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only
-          five centuries, but also the leap into electronic typesetting,
-          remaining essentially unchanged. It was popularised in the 1960s with
-          the release of Letraset sheets containing Lorem Ipsum passages, and
-          more recently with desktop publishing software like Aldus PageMaker
-          including versions of Lorem Ipsum.
+          <p>
+            I will illustrate you what I learned in the process of creating this
+            site.
+          </p>
+
+          <p>
+            1.The first and most important thing I learned how to properly use
+            the React Router routing library, its classes and attributes.
+          </p>
+          <p>
+            2.Further , I learned how to properly import components from React
+            UI library, which made it very easy to create an interface.
+          </p>
+          <p>
+            3.Also I figured out how to extract API data.(Specifically, here are
+            the names of the characters and information about them.)
+          </p>
+          <p>
+            4.The first and most important thing I learned was API data
+            extraction.(Specifically, here are the names of the characters and
+            information about them.)
+          </p>
+          <p>
+            5.The first and most important thing I learned was API data
+            extraction.(Specifically, here are the names of the characters and
+            information about them.)
+          </p>
+          <p>
+            6.The first and most important thing I learned was API data
+            extraction.(Specifically, here are the names of the characters and
+            information about them.)
+          </p>
         </div>
       </div>
       <div className="overlay"></div>

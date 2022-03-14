@@ -1,23 +1,30 @@
+.singlepage-main-div,
+html {
+  background-color: rgb(37, 163, 5);
+}
 .h1 {
-  border: 2px solid red;
-  width: 50%;
+  border: 2px solid rgb(51, 255, 0);
+  width: 300px;
   margin-left: 5%;
   word-wrap: break-word;
-  height: 500px;
+  /* height: 350px; */
   padding-left: 2%;
   padding-right: 2%;
+  margin-top: 50px;
 }
 .item-img {
   margin-left: 5%;
+  margin-top: 50px;
   cursor: pointer;
   /* border: 2px solid red; */
-  height: 500px;
-  width: 400px;
+  height: 350px;
+  width: 300px;
+  border: 2px solid rgb(51, 255, 0);
 }
 .png {
-  border: 2px solid rgb(0, 0, 0);
-  height: 500px;
-  width: 400px;
+  border: 2px solid rgb(51, 255, 0);
+  height: 350px;
+  width: 300px;
 }
 .img-n-h1 {
   display: flex;

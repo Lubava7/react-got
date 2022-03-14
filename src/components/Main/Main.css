@@ -1,7 +1,7 @@
 .main-body {
   display: flex;
   flex-direction: column;
-  background-color: #e6e6e6;
+  background-color: #69ff55;
   width: 100%;
 }
 
@@ -11,9 +11,10 @@
   height: 255px;
   margin-top: 10%;
   padding: 5% 5% 5% 5%;
-  background-color: rgb(184, 184, 184);
+  background-color: rgb(11, 54, 0);
 }
 .main-page-10 {
+  padding: 20px;
   width: 90%;
   border-radius: 20px;
   height: 100%;
@@ -24,9 +25,10 @@
   display: flex;
   list-style-type: none;
   background-color: white;
+  background-color: rgb(11, 54, 0);
 }
 .title-of-char {
-  color: #b58f0f;
+  color: #000000;
   text-decoration: none;
   font-size: 30px;
 }
@@ -36,6 +38,7 @@
   font-size: 25px;
   text-align: center;
   margin-top: 10px;
+  background-color: rgb(37, 163, 5);
 }
 
 .CircularProgress {
@@ -52,8 +55,10 @@
   height: 160px;
   border-radius: 20px;
   word-wrap: break-word;
+  background-color: rgb(37, 163, 5);
+  color: #000000;
 }
-.link-popup-button-main {
+/* .link-popup-button-main {
   padding-left: 10%;
   color: white;
   font-size: 20px;
@@ -61,4 +66,4 @@
   width: 100%;
   cursor: pointer;
   position: fixed;
-}
+} */

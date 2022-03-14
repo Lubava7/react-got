@@ -120,9 +120,9 @@ export default function BackToTop(props) {
             <Link className="link" to={`/`}>
               Main
             </Link>
-            <Link className="link" to={`/`}>
+            <div className="link-popup-button-main">
               <PopupOpenButton />
-            </Link>
+            </div>
           </Typography>
         </Toolbar>
       </AppBar>

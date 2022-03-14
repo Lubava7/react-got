@@ -45,10 +45,10 @@ function Main() {
     );
   }
   return (
-    <body className="main-body">
-      <Link className="link-popup-button-main" to={`/`}>
+    <div className="main-body">
+      {/* <Link className="link-popup-button-main" to={`/`}>
         <PopupOpenButton />
-      </Link>
+      </Link> */}
       <Header />
       <Randomimg mainCharacter={mainCharacter} />
 
@@ -69,13 +69,11 @@ function Main() {
                 anything for us here.
               </p>
             </div>
-            <li className="aliases">
-              {item.aliases ? <p>{item.aliases}</p> : <p>{item.name}</p>}
-            </li>
+            <li className="aliases">{item.name || item.aliases}</li>
           </Link>
         ))}
       </div>
-    </body>
+    </div>
   );
 }
 

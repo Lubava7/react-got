@@ -37,11 +37,16 @@ function Singlepage() {
 
       <div className="img-n-h1">
         <div className="item-img">
-          {item.img ? (
+          <p>
+            This div contains photo of the current character which matches his
+            name. I dont have a photo yet but this doesnt change anything for us
+            here.
+          </p>
+          {/* {item.img ? (
             <img src={item.img} alt="name" />
           ) : (
             <img className="png" src={questionmark} alt="?" />
-          )}
+          )} */}
         </div>
         {item && (
           <div className="h1">

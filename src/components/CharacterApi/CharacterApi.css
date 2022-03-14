@@ -1,10 +1,10 @@
 .ulli {
-  background-color: aliceblue;
-  width: 90%;
-  height: 100%;
-  margin-left: 5%;
+  background-color: rgb(11, 54, 0);
+  width: 98%;
+  padding: 20px;
+  margin: 2%;
   font-size: 18px;
-  border: 2px solid black;
+  border: 2px solid rgb(48, 168, 1);
   flex-wrap: wrap;
   display: flex;
   list-style-type: none;
@@ -17,6 +17,7 @@
 li {
   list-style-type: none;
   width: 110px;
+  margin: 5px;
 }
 .photo-name {
   border: 0;

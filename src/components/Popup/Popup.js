@@ -30,21 +30,6 @@ function Popup({ open, onClose }) {
             3.Also I figured out how to extract API data.(Specifically, here are
             the names of the characters and information about them.)
           </p>
-          <p>
-            4.The first and most important thing I learned was API data
-            extraction.(Specifically, here are the names of the characters and
-            information about them.)
-          </p>
-          <p>
-            5.The first and most important thing I learned was API data
-            extraction.(Specifically, here are the names of the characters and
-            information about them.)
-          </p>
-          <p>
-            6.The first and most important thing I learned was API data
-            extraction.(Specifically, here are the names of the characters and
-            information about them.)
-          </p>
         </div>
       </div>
       <div className="overlay"></div>

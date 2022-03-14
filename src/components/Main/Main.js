@@ -5,7 +5,7 @@ import "./Main.css";
 import CircularProgress from "@mui/material/CircularProgress";
 // import questionmark from "../../images/questionmark.png";
 import Header from "../../components/Header/Header";
-import PopupOpenButton from "../PopupOpenButton/PopupOpenButton";
+// import PopupOpenButton from "../PopupOpenButton/PopupOpenButton";
 
 function Main() {
   const [mainCharacter, setMainCharacter] = useState({});

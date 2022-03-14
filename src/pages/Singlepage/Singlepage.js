@@ -3,7 +3,7 @@ import "./Singlepage.css";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import CircularProgress from "@mui/material/CircularProgress";
-import questionmark from "../../images/questionmark.png";
+// import questionmark from "../../images/questionmark.png";
 
 import Header from "../../components/Header/Header";
 

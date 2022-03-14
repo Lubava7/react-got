@@ -3,7 +3,7 @@ import "./CharacterApi.css";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import CircularProgress from "@mui/material/CircularProgress";
-import questionmark from "../../images/questionmark.png";
+// import questionmark from "../../images/questionmark.png";
 
 function CharacterApi() {
   const [items, setItems] = useState([]);

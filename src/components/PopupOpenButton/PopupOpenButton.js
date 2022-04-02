@@ -8,7 +8,7 @@ function PopupOpenButton() {
   return (
     <div>
       <button onClick={() => setIsOpen(true)} className="popup-open-button">
-        show pop up
+        show introduction
       </button>
       <Popup open={isOpen} onClose={() => setIsOpen(false)} />
     </div>

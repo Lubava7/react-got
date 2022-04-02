@@ -36,11 +36,12 @@ function CharacterApi() {
           <Link className="photo-name" to={`/items/${index + 1}`}>
             {/* <img className="png-items-page" src={questionmark} alt="?" /> */}
             <div className="p-10">
-              <p>
+              {/* <p>
                 This div contains photo of the current character which matches
                 his name. I dont have a photo yet but this doesnt change
                 anything for us here.
-              </p>
+              </p> */}
+              <p>PHOTO</p>
             </div>
             <li className="aliases">{item.name || item.aliases}</li>
           </Link>

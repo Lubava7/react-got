@@ -109,7 +109,7 @@ export default function BackToTop(props) {
       <CssBaseline />
       <AppBar
         sx={{
-          bgcolor: "green",
+          bgcolor: "inherit",
         }}
       >
         <Toolbar>
@@ -128,7 +128,7 @@ export default function BackToTop(props) {
       </AppBar>
       <Toolbar id="back-to-top-anchor" />
       <ScrollTop {...props}>
-        <Fab color="success" size="small" aria-label="scroll back to top">
+        <Fab color="inherit" size="small" aria-label="scroll back to top">
           <KeyboardArrowUpIcon />
         </Fab>
       </ScrollTop>

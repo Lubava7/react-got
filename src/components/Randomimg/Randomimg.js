@@ -17,16 +17,19 @@ function Randomimg({ mainCharacter }) {
         </span>
 
         <div className="p-descript">
-          <p>
+          {/* <p>
             This div contains photo of the current character which matches his
             name. I dont have a photo yet but this doesnt change anything for us
             here.
-          </p>
+          </p> */}
+          <p>PHOTO</p>
         </div>
       </div>
 
       <div className="description-random-char">
-        <h1>{mainCharacter.name || mainCharacter.aliases}</h1>
+        <h1 className="h1-random">
+          {mainCharacter.name || mainCharacter.aliases}
+        </h1>
         <p>gender:{mainCharacter.gender}</p>
         <p className="playedBy">playedBy:{mainCharacter.playedBy}</p>
         <p className="povBooks">povBooks:{mainCharacter.povBooks}</p>

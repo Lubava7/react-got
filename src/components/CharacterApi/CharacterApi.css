@@ -1,19 +1,20 @@
 .ulli {
-  background-color: rgb(11, 54, 0);
   width: 98%;
   padding: 20px;
   margin: 2%;
   font-size: 18px;
-  border: 2px solid rgb(48, 168, 1);
+
   flex-wrap: wrap;
   display: flex;
   list-style-type: none;
 }
 .body {
-  /* border: 2px solid black; */
+  border-radius: 5px;
   display: flex;
 }
-
+.p-10 {
+  background-color: rgb(226, 226, 226);
+}
 li {
   list-style-type: none;
   width: 110px;

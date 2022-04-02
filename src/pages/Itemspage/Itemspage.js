@@ -8,10 +8,14 @@ function Itemspage() {
   return (
     <div className="itemspage-body">
       <Header />
-      <div className="title">
-        <p className="title-of-char">Description of the site and characters</p>
+      <div className="white-body-items">
+        <div className="title">
+          <p className="title-of-char">
+            Description of the site and characters
+          </p>
+        </div>
+        <CharacterApi />
       </div>
-      <CharacterApi />
     </div>
   );
 }

@@ -37,7 +37,7 @@ function Singlepage() {
 
       <div className="img-n-h1">
         <div className="item-img">
-          <p>
+          <p classname="p-photo-single">
             This div contains photo of the current character which matches his
             name. I dont have a photo yet but this doesnt change anything for us
             here.

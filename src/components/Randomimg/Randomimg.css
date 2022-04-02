@@ -13,7 +13,7 @@
   width: 100%;
 } */
 .p-descript {
-  border-radius: 20px;
+  /* border-radius: 20px; */
   padding: 10px;
   word-wrap: break-word;
   font-size: 20px;
@@ -25,10 +25,10 @@
 .span {
   font-size: 30px;
   color: #b99b0f;
-  border-radius: 20px;
+  /* border-radius: 20px; */
 }
 .description-random-char {
-  border-radius: 20px;
+  /* border-radius: 20px; */
   padding-left: 20px;
   margin-left: 50px;
   font-size: 20px;
@@ -37,9 +37,9 @@
   word-wrap: break-word;
 }
 .rand-photo {
-  border-radius: 20px;
+  /* border-radius: 20px; */
   /* height: 300px; */
   width: 800px;
   /* position: relative; */
-  padding-top: 2px;
+  /* padding-top: 2px; */
 }
